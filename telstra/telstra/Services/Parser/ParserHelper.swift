@@ -20,7 +20,7 @@ final class ParserHelper {
 			completion(.success([newModel]))
 		}
 	}
-
+	
 	static func parse<T: Parceable>(data: Data, completion: (Result<T, ErrorResult>) -> Void) {
 		if
 			let response = String(data: data, encoding: String.Encoding.ascii),

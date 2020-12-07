@@ -13,16 +13,16 @@ class LandscapeTableViewCell: UITableViewCell {
 	var thumbnailImage = UIImageView()
 	var titleLabel = UILabel()
 	var descriptionLabel = UILabel()
-
- var feedsValue : ListModel? {
-	 didSet {
-		 guard let feeds = feedsValue else {
-			 return
-		 }
-		titleLabel.text = feeds.title
-		descriptionLabel.text = feeds.description
-	 }
- }
+	
+	var feedsValue : ListModel? {
+		didSet {
+			guard let feeds = feedsValue else {
+				return
+			}
+			titleLabel.text = feeds.title
+			descriptionLabel.text = feeds.description
+		}
+	}
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -38,14 +38,14 @@ class LandscapeTableViewCell: UITableViewCell {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-
- override func awakeFromNib() {
-	 super.awakeFromNib()
- }
-
- override func setSelected(_ selected: Bool, animated: Bool) {
-	 super.setSelected(selected, animated: animated)
- }
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+	}
+	
+	override func setSelected(_ selected: Bool, animated: Bool) {
+		super.setSelected(selected, animated: animated)
+	}
 	
 	func addThumbnailImage() {
 		thumbnailImage.translatesAutoresizingMaskIntoConstraints = false
@@ -61,7 +61,7 @@ class LandscapeTableViewCell: UITableViewCell {
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 		titleLabel.numberOfLines = 0
 		titleLabel.font = UIFont.boldSystemFont(ofSize: 13)
-
+		
 		contentView.addSubview(titleLabel)
 		NSLayoutConstraint.activate([
 			titleLabel.leadingAnchor.constraint(equalTo: thumbnailImage.trailingAnchor, constant: 10),

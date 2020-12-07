@@ -11,10 +11,10 @@ import XCTest
 class FeedsServiceTests: XCTestCase {
 	
 	func testCancelRequest() {
-	 let service : FeedsService! = FeedsService()
-	 service.fetchConverter{ (_) in
-	 }
-	 service.cancelFetchCurrencies()
-	 XCTAssertNil(service.task, "Expected task nil")
- }
+		let service : FeedsService! = FeedsService()
+		service.fetchConverter{ (_) in
+		}
+		service.cancelFetchCurrencies()
+		XCTAssertNil(service.task, "Expected task nil")
+	}
 }

@@ -16,7 +16,7 @@ class MockData {
 		}
 		return data
 	}
-
+	
 	func getFeeds() -> FeedsModel {
 		var responseResults: FeedsModel!
 		guard let data = self.readJson(forResource: "facts") else {
@@ -34,7 +34,7 @@ class MockData {
 		ParserHelper.parse(data: data, completion: completion)
 		return responseResults
 	}
-
+	
 	func getFeedslist() -> [ListModel] {
 		guard let list = getFeeds().rows else {
 			return [ListModel(title: "title", description: "description", imageHref: "imageHref")]
@@ -50,7 +50,7 @@ extension MockData {
 			XCTFail("Missing file: \(fileName).json")
 			return nil
 		}
-
+		
 		do {
 			let data = try Data(contentsOf: url)
 			return data
