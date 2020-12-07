@@ -1,0 +1,6 @@
+framework module Pods_telstraTests {
+  umbrella header "Pods-telstraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
