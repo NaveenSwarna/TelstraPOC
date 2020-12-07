@@ -28,6 +28,13 @@
 		8448F39C257DA36A00A7ACF4 /* FeedsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F39B257DA36A00A7ACF4 /* FeedsDataSource.swift */; };
 		8448F3A1257DA37A00A7ACF4 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3A0257DA37A00A7ACF4 /* FeedsViewModel.swift */; };
 		8448F3A6257DA43600A7ACF4 /* FeedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3A5257DA43600A7ACF4 /* FeedsService.swift */; };
+		8448F3C1257DB45500A7ACF4 /* FeedsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3C0257DB45500A7ACF4 /* FeedsViewModelTests.swift */; };
+		8448F3C6257DB49000A7ACF4 /* FeedsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3C5257DB49000A7ACF4 /* FeedsDataSourceTests.swift */; };
+		8448F3CB257DB4DA00A7ACF4 /* FeedsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3CA257DB4DA00A7ACF4 /* FeedsServiceTests.swift */; };
+		8448F3D0257DB4FC00A7ACF4 /* FeedsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3CF257DB4FC00A7ACF4 /* FeedsModelTests.swift */; };
+		8448F3F1257DB6E200A7ACF4 /* MockFeedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3EE257DB6E200A7ACF4 /* MockFeedsService.swift */; };
+		8448F3F2257DB6E200A7ACF4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F3EF257DB6E200A7ACF4 /* MockData.swift */; };
+		8448F3F3257DB6E200A7ACF4 /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8448F3F0257DB6E200A7ACF4 /* facts.json */; };
 		848E63AF257B6B1F00CD2DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E63AE257B6B1F00CD2DCA /* AppDelegate.swift */; };
 		848E63B8257B6B2200CD2DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E63B7257B6B2200CD2DCA /* Assets.xcassets */; };
 		848E63BB257B6B2200CD2DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E63B9257B6B2200CD2DCA /* LaunchScreen.storyboard */; };
@@ -77,6 +84,13 @@
 		8448F39B257DA36A00A7ACF4 /* FeedsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsDataSource.swift; sourceTree = "<group>"; };
 		8448F3A0257DA37A00A7ACF4 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
 		8448F3A5257DA43600A7ACF4 /* FeedsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsService.swift; sourceTree = "<group>"; };
+		8448F3C0257DB45500A7ACF4 /* FeedsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModelTests.swift; sourceTree = "<group>"; };
+		8448F3C5257DB49000A7ACF4 /* FeedsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsDataSourceTests.swift; sourceTree = "<group>"; };
+		8448F3CA257DB4DA00A7ACF4 /* FeedsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsServiceTests.swift; sourceTree = "<group>"; };
+		8448F3CF257DB4FC00A7ACF4 /* FeedsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsModelTests.swift; sourceTree = "<group>"; };
+		8448F3EE257DB6E200A7ACF4 /* MockFeedsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFeedsService.swift; sourceTree = "<group>"; };
+		8448F3EF257DB6E200A7ACF4 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8448F3F0257DB6E200A7ACF4 /* facts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facts.json; sourceTree = "<group>"; };
 		848E63AB257B6B1F00CD2DCA /* telstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = telstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E63AE257B6B1F00CD2DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848E63B7257B6B2200CD2DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,6 +268,16 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		8448F3ED257DB6E200A7ACF4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8448F3EE257DB6E200A7ACF4 /* MockFeedsService.swift */,
+				8448F3EF257DB6E200A7ACF4 /* MockData.swift */,
+				8448F3F0257DB6E200A7ACF4 /* facts.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		848E63A2257B6B1F00CD2DCA = {
 			isa = PBXGroup;
 			children = (
@@ -298,7 +322,12 @@
 		848E63C4257B6B2200CD2DCA /* telstraTests */ = {
 			isa = PBXGroup;
 			children = (
+				8448F3ED257DB6E200A7ACF4 /* Mocks */,
 				848E63C5257B6B2200CD2DCA /* telstraTests.swift */,
+				8448F3C0257DB45500A7ACF4 /* FeedsViewModelTests.swift */,
+				8448F3C5257DB49000A7ACF4 /* FeedsDataSourceTests.swift */,
+				8448F3CA257DB4DA00A7ACF4 /* FeedsServiceTests.swift */,
+				8448F3CF257DB4FC00A7ACF4 /* FeedsModelTests.swift */,
 				848E63C7257B6B2200CD2DCA /* Info.plist */,
 			);
 			path = telstraTests;
@@ -453,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8448F3F3257DB6E200A7ACF4 /* facts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +630,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8448F3D0257DB4FC00A7ACF4 /* FeedsModelTests.swift in Sources */,
+				8448F3F1257DB6E200A7ACF4 /* MockFeedsService.swift in Sources */,
+				8448F3C6257DB49000A7ACF4 /* FeedsDataSourceTests.swift in Sources */,
+				8448F3CB257DB4DA00A7ACF4 /* FeedsServiceTests.swift in Sources */,
+				8448F3C1257DB45500A7ACF4 /* FeedsViewModelTests.swift in Sources */,
+				8448F3F2257DB6E200A7ACF4 /* MockData.swift in Sources */,
 				848E63C6257B6B2200CD2DCA /* telstraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
